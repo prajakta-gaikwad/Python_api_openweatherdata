@@ -77,14 +77,7 @@ len(cities)
 
 
 ```python
-weather_response = requests.get(query_url + cities[2])
-weather_response
-if weather_response.status_code == 200:
-    print("yes")
-```
-
-    yes
-    
+ 
 
 ### Perform API Calls
 * Perform a weather check on each city using a series of successive API calls.
