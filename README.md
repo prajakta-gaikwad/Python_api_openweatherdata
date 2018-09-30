@@ -8,7 +8,15 @@
 * There is no strong relationship between latitude and wind speed. However, in northern hemispheres there is a flurry of cities with over 20 mph of wind.
 
 ---
+<style scoped> .dataframe tbody tr th:only-of-type { vertical-align: middle; }
+.dataframe tbody tr th {
+    vertical-align: top;
+}
 
+.dataframe thead th {
+    text-align: right;
+}
+</style>
 #### Note
 * Instructions have been included for each segment. You do not have to follow them exactly, but they are included to help you think through the steps.
 
