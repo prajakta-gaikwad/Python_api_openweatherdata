@@ -30,10 +30,7 @@ To build a series of scatter plots to showcase the following relationships:
     text-align: right;
 }
 </style>
-#### Note
-* Instructions have been included for each segment. You do not have to follow them exactly, but they are included to help you think through the steps.
-
-
+**Dependencies:**
 ```python
 # Dependencies and Setup
 import matplotlib.pyplot as plt
@@ -45,7 +42,7 @@ import time
 # Import API key
 from api_keys import api_key
 
-# Incorporated citipy to determine city based on latitude and longitude
+#Incorporated citipy to determine city based on latitude and longitude
 from citipy import citipy
 
 # Output File (CSV)
