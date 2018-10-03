@@ -1,13 +1,19 @@
+# Weather Data Analysis
 
 This project is for creating a Python script to visualize the weather of 500+ cities across the world of varying distance from the equator, by utilizing a Python library, and the OpenWeatherMap API.
 
-Objective: To build a series of scatter plots to showcase the following relationships:
+**Objective:**
+To build a series of scatter plots to showcase the following relationships:
 
 Temperature (F) vs. Latitude
 Humidity (%) vs. Latitude
 Cloudiness (%) vs. Latitude
 Wind Speed (mph) vs. Latitude
-----
+
+**Technologies/Framework Used:**
+* Python Requests
+* APIs
+* JSON Traversals
 
 ### Analysis
 * As expected, the weather becomes significantly warmer as one approaches the equator (0 Deg. Latitude). More interestingly, however, is the fact that the southern hemisphere tends to be warmer this time of year than the northern hemisphere. This may be due to the tilt of the earth.
