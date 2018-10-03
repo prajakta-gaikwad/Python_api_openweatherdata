@@ -5,10 +5,10 @@ This project is for creating a Python script to visualize the weather of 500+ ci
 **Objective:**
 To build a series of scatter plots to showcase the following relationships:
 
-Temperature (F) vs. Latitude
-Humidity (%) vs. Latitude
-Cloudiness (%) vs. Latitude
-Wind Speed (mph) vs. Latitude
+* Temperature (F) vs. Latitude
+* Humidity (%) vs. Latitude
+* Cloudiness (%) vs. Latitude
+* Wind Speed (mph) vs. Latitude
 
 **Technologies/Framework Used:**
 * Python Requests
