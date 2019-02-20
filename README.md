@@ -1,6 +1,19 @@
+# Weather Data Analysis
 
-# WeatherPy
-----
+This project is for creating a Python script to visualize the weather of 500+ cities across the world of varying distance from the equator, by utilizing a Python library, and the OpenWeatherMap API.
+
+**Objective:**
+To build a series of scatter plots to showcase the following relationships:
+
+* Temperature (F) vs. Latitude
+* Humidity (%) vs. Latitude
+* Cloudiness (%) vs. Latitude
+* Wind Speed (mph) vs. Latitude
+
+**Technologies/Framework Used:**
+* Python Requests
+* APIs
+* JSON Traversals
 
 ### Analysis
 * As expected, the weather becomes significantly warmer as one approaches the equator (0 Deg. Latitude). More interestingly, however, is the fact that the southern hemisphere tends to be warmer this time of year than the northern hemisphere. This may be due to the tilt of the earth.
@@ -8,11 +21,16 @@
 * There is no strong relationship between latitude and wind speed. However, in northern hemispheres there is a flurry of cities with over 20 mph of wind.
 
 ---
+<style scoped> .dataframe tbody tr th:only-of-type { vertical-align: middle; }
+.dataframe tbody tr th {
+    vertical-align: top;
+}
 
-#### Note
-* Instructions have been included for each segment. You do not have to follow them exactly, but they are included to help you think through the steps.
-
-
+.dataframe thead th {
+    text-align: right;
+}
+</style>
+**Dependencies:**
 ```python
 # Dependencies and Setup
 import matplotlib.pyplot as plt
@@ -24,7 +42,7 @@ import time
 # Import API key
 from api_keys import api_key
 
-# Incorporated citipy to determine city based on latitude and longitude
+#Incorporated citipy to determine city based on latitude and longitude
 from citipy import citipy
 
 # Output File (CSV)
@@ -69,14 +87,7 @@ len(cities)
 
 
 ```python
-weather_response = requests.get(query_url + cities[2])
-weather_response
-if weather_response.status_code == 200:
-    print("yes")
-```
-
-    yes
-    
+ 
 
 ### Perform API Calls
 * Perform a weather check on each city using a series of successive API calls.
@@ -866,7 +877,7 @@ plt.show()
 ```
 
 
-![png](output_13_0.png)
+![png](LatVsTemp.png)
 
 
 #### Latitude vs. Humidity Plot
@@ -886,7 +897,7 @@ plt.show()
 ```
 
 
-![png](output_15_0.png)
+![png](LatVsHumidity.png)
 
 
 #### Latitude vs. Cloudiness Plot
@@ -906,7 +917,7 @@ plt.show()
 ```
 
 
-![png](output_17_0.png)
+![png](LatVsCloudiness.png)
 
 
 #### Latitude vs. Wind Speed Plot
@@ -926,5 +937,5 @@ plt.show()
 ```
 
 
-![png](output_19_0.png)
+![png](LatVsWindSpeed.png)
 
